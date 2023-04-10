@@ -2938,8 +2938,10 @@ IL2CPP_EXTERN_C void ActionEventPtr_ReadValue_TisIl2CppFullySharedGenericStruct_
 IL2CPP_EXTERN_C void ControlBuilder_WithProcessor_TisRuntimeObject_TisIl2CppFullySharedGenericStruct_m2EA32926BD2DB803F8808FD26E28D8EEF7FFA14B_gshared ();
 IL2CPP_EXTERN_C void Builder_WithType_TisRuntimeObject_m78AB1B3E3CC78CC83E7A66415AD992EF33CF8A7F_gshared ();
 IL2CPP_EXTERN_C void Record_ReadValue_TisIl2CppFullySharedGenericStruct_mE3547EC2445C456821BBAE97E1F707B940F8180A_gshared ();
+IL2CPP_EXTERN_C void HandGameObjects_ToggleRenderers_TisRuntimeObject_mEF5415DEA402D72B72B08240F325A1AAB8FACCF2_gshared ();
+IL2CPP_EXTERN_C void HandGameObjects_ToggleRenderers_TisRuntimeObject_m3CF4C5D68B38E993A2C52195DC2EDF9E92154BDE_gshared ();
 IL2CPP_EXTERN_C const Il2CppMethodPointer g_Il2CppGenericMethodPointers[];
-const Il2CppMethodPointer g_Il2CppGenericMethodPointers[2921] = 
+const Il2CppMethodPointer g_Il2CppGenericMethodPointers[2923] = 
 {
 	NULL/* 0*/,
 	(Il2CppMethodPointer)&U3CU3Ec__cctor_mCFBBAD531DD1EC2DD66939FDBFCD03294CC27F39_gshared/* 1*/,
@@ -5862,4 +5864,6 @@ const Il2CppMethodPointer g_Il2CppGenericMethodPointers[2921] =
 	(Il2CppMethodPointer)&ControlBuilder_WithProcessor_TisRuntimeObject_TisIl2CppFullySharedGenericStruct_m2EA32926BD2DB803F8808FD26E28D8EEF7FFA14B_gshared/* 2918*/,
 	(Il2CppMethodPointer)&Builder_WithType_TisRuntimeObject_m78AB1B3E3CC78CC83E7A66415AD992EF33CF8A7F_gshared/* 2919*/,
 	(Il2CppMethodPointer)&Record_ReadValue_TisIl2CppFullySharedGenericStruct_mE3547EC2445C456821BBAE97E1F707B940F8180A_gshared/* 2920*/,
+	(Il2CppMethodPointer)&HandGameObjects_ToggleRenderers_TisRuntimeObject_mEF5415DEA402D72B72B08240F325A1AAB8FACCF2_gshared/* 2921*/,
+	(Il2CppMethodPointer)&HandGameObjects_ToggleRenderers_TisRuntimeObject_m3CF4C5D68B38E993A2C52195DC2EDF9E92154BDE_gshared/* 2922*/,
 };

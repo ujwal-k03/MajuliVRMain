@@ -1790,6 +1790,8 @@ IL2CPP_EXTERN_C RuntimeClass* FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED_i
 IL2CPP_EXTERN_C RuntimeClass* Func_1_t97C6124008260D65F78265F8B3965ACA776F0671_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HandGameObjects_t67B3015403CCBA18BC97A3548D23A8D6AD75A926_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HandGameObjects_t733506ECF6D56A69E3E16B4BA9F367CEAF21E31C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IEnumerator_1_t74105E6C32CA7AC4F4202BB870BF99B1C95BA2DE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IEnumerator_1_t85AF6758BDF07BCEF6628A95FE6FAD7AB16C9311_il2cpp_TypeInfo_var;
@@ -3393,6 +3395,56 @@ struct HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F  : public Runti
 struct HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields
 {
 	// UnityEngine.Vector3[] UnityEngine.XR.Hands.Samples.VisualizerSample.HandVisualizer/HandGameObjects::s_LinePointsReuse
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_LinePointsReuse_7;
+};
+
+// UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects
+struct HandGameObjects_t67B3015403CCBA18BC97A3548D23A8D6AD75A926  : public RuntimeObject
+{
+	// UnityEngine.GameObject UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::m_HandRoot
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_HandRoot_0;
+	// UnityEngine.GameObject UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::m_DrawJointsParent
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_DrawJointsParent_1;
+	// UnityEngine.Transform[] UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::m_JointXforms
+	TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* ___m_JointXforms_2;
+	// UnityEngine.GameObject[] UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::m_DrawJoints
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___m_DrawJoints_3;
+	// UnityEngine.GameObject[] UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::m_VelocityParents
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___m_VelocityParents_4;
+	// UnityEngine.LineRenderer[] UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::m_Lines
+	LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A* ___m_Lines_5;
+	// System.Boolean UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::m_IsTracked
+	bool ___m_IsTracked_6;
+};
+
+struct HandGameObjects_t67B3015403CCBA18BC97A3548D23A8D6AD75A926_StaticFields
+{
+	// UnityEngine.Vector3[] UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::s_LinePointsReuse
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_LinePointsReuse_7;
+};
+
+// UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects
+struct HandGameObjects_t733506ECF6D56A69E3E16B4BA9F367CEAF21E31C  : public RuntimeObject
+{
+	// UnityEngine.GameObject UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::m_HandRoot
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_HandRoot_0;
+	// UnityEngine.GameObject UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::m_DrawJointsParent
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_DrawJointsParent_1;
+	// UnityEngine.Transform[] UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::m_JointXforms
+	TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* ___m_JointXforms_2;
+	// UnityEngine.GameObject[] UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::m_DrawJoints
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___m_DrawJoints_3;
+	// UnityEngine.GameObject[] UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::m_VelocityParents
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___m_VelocityParents_4;
+	// UnityEngine.LineRenderer[] UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::m_Lines
+	LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A* ___m_Lines_5;
+	// System.Boolean UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::m_IsTracked
+	bool ___m_IsTracked_6;
+};
+
+struct HandGameObjects_t733506ECF6D56A69E3E16B4BA9F367CEAF21E31C_StaticFields
+{
+	// UnityEngine.Vector3[] UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::s_LinePointsReuse
 	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_LinePointsReuse_7;
 };
 
@@ -34737,6 +34789,158 @@ IL2CPP_EXTERN_C  void Record_ReadValue_TisIl2CppFullySharedGenericStruct_mE3547E
 	_thisAdjusted = reinterpret_cast<Record_tF7FF07DC502355356B48CE78337FB16B196E2EE0*>(__this + _offset);
 	Record_ReadValue_TisIl2CppFullySharedGenericStruct_mE3547EC2445C456821BBAE97E1F707B940F8180A(_thisAdjusted, il2cppRetVal, method);
 	return;
+}
+// System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::ToggleRenderers<System.Object>(System.Boolean,UnityEngine.Transform)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_ToggleRenderers_TisRuntimeObject_mEF5415DEA402D72B72B08240F325A1AAB8FACCF2_gshared (bool ___toggle0, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___xform1, const RuntimeMethod* method) 
+{
+	if (!il2cpp_rgctx_is_initialized(method))
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HandGameObjects_t67B3015403CCBA18BC97A3548D23A8D6AD75A926_il2cpp_TypeInfo_var);
+		il2cpp_rgctx_method_init(method);
+	}
+	RuntimeObject* V_0 = NULL;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	bool V_3 = false;
+	{
+		// if (xform.TryGetComponent<TRenderer>(out var renderer))
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___xform1;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_0);
+		bool L_1;
+		L_1 = InvokerFuncInvoker1< bool, RuntimeObject** >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)), il2cpp_rgctx_method(method->rgctx_data, 0), (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_0, (&V_0));
+		V_1 = L_1;
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		// renderer.enabled = toggle;
+		RuntimeObject* L_3 = V_0;
+		bool L_4 = ___toggle0;
+		NullCheck((Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)L_3);
+		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8((Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)L_3, L_4, NULL);
+	}
+
+IL_001a:
+	{
+		// for (int childIndex = 0; childIndex < xform.childCount; ++childIndex)
+		V_2 = 0;
+		goto IL_0030;
+	}
+
+IL_001e:
+	{
+		// ToggleRenderers<TRenderer>(toggle, xform.GetChild(childIndex));
+		bool L_5 = ___toggle0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = ___xform1;
+		int32_t L_7 = V_2;
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_6, L_7, NULL);
+		il2cpp_codegen_runtime_class_init_inline(HandGameObjects_t67B3015403CCBA18BC97A3548D23A8D6AD75A926_il2cpp_TypeInfo_var);
+		InvokerActionInvoker2< bool, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 3)), il2cpp_rgctx_method(method->rgctx_data, 3), NULL, L_5, L_8);
+		// for (int childIndex = 0; childIndex < xform.childCount; ++childIndex)
+		int32_t L_9 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_9, 1));
+	}
+
+IL_0030:
+	{
+		// for (int childIndex = 0; childIndex < xform.childCount; ++childIndex)
+		int32_t L_10 = V_2;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = ___xform1;
+		NullCheck(L_11);
+		int32_t L_12;
+		L_12 = Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0(L_11, NULL);
+		V_3 = (bool)((((int32_t)L_10) < ((int32_t)L_12))? 1 : 0);
+		bool L_13 = V_3;
+		if (L_13)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::ToggleRenderers<System.Object>(System.Boolean,UnityEngine.Transform)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_ToggleRenderers_TisRuntimeObject_m3CF4C5D68B38E993A2C52195DC2EDF9E92154BDE_gshared (bool ___toggle0, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___xform1, const RuntimeMethod* method) 
+{
+	if (!il2cpp_rgctx_is_initialized(method))
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HandGameObjects_t733506ECF6D56A69E3E16B4BA9F367CEAF21E31C_il2cpp_TypeInfo_var);
+		il2cpp_rgctx_method_init(method);
+	}
+	RuntimeObject* V_0 = NULL;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	bool V_3 = false;
+	{
+		// if (xform.TryGetComponent<TRenderer>(out var renderer))
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___xform1;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_0);
+		bool L_1;
+		L_1 = InvokerFuncInvoker1< bool, RuntimeObject** >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)), il2cpp_rgctx_method(method->rgctx_data, 0), (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_0, (&V_0));
+		V_1 = L_1;
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		// renderer.enabled = toggle;
+		RuntimeObject* L_3 = V_0;
+		bool L_4 = ___toggle0;
+		NullCheck((Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)L_3);
+		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8((Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)L_3, L_4, NULL);
+	}
+
+IL_001a:
+	{
+		// for (int childIndex = 0; childIndex < xform.childCount; ++childIndex)
+		V_2 = 0;
+		goto IL_0030;
+	}
+
+IL_001e:
+	{
+		// ToggleRenderers<TRenderer>(toggle, xform.GetChild(childIndex));
+		bool L_5 = ___toggle0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = ___xform1;
+		int32_t L_7 = V_2;
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_6, L_7, NULL);
+		il2cpp_codegen_runtime_class_init_inline(HandGameObjects_t733506ECF6D56A69E3E16B4BA9F367CEAF21E31C_il2cpp_TypeInfo_var);
+		InvokerActionInvoker2< bool, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 3)), il2cpp_rgctx_method(method->rgctx_data, 3), NULL, L_5, L_8);
+		// for (int childIndex = 0; childIndex < xform.childCount; ++childIndex)
+		int32_t L_9 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_9, 1));
+	}
+
+IL_0030:
+	{
+		// for (int childIndex = 0; childIndex < xform.childCount; ++childIndex)
+		int32_t L_10 = V_2;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = ___xform1;
+		NullCheck(L_11);
+		int32_t L_12;
+		L_12 = Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0(L_11, NULL);
+		V_3 = (bool)((((int32_t)L_10) < ((int32_t)L_12))? 1 : 0);
+		bool L_13 = V_3;
+		if (L_13)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		// }
+		return;
+	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* InputControl_get_parent_mCB9335C099924935526B38534EE76E53847787AF_inline (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, const RuntimeMethod* method) 
 {

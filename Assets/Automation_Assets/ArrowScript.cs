@@ -15,16 +15,26 @@ public class ArrowScript : MonoBehaviour
     public GameObject TransformTo;
     public float transitionSpeed = 5f;
     private bool active;
+    public Quaternion myOriginalAngle;
+    private Vector3 InitialCameraPosition;
+    private Vector3 myDifference;
     void Start()
     {
         curScale = new Vector3(33.46707F,0.06694455F,100.5768F);
         zoomScale =new Vector3(33.46707F,1.6694455F,100.5768F) ;
         active = false;
-        Threshold = 10;
+        Threshold = 30;
+        myOriginalAngle = transform.rotation;
+        InitialCameraPosition = Camera.main.gameObject.transform.position;
+        myDifference = InitialCameraPosition - transform.position;
+
     }
 
     void Update()
     {
+
+        transform.position = Camera.main.gameObject.transform.position - myDifference;
+        transform.rotation = myOriginalAngle;
         Quaternion myView = transform.rotation;
         Quaternion cameraAngle = Camera.main.transform.rotation;
         Vector3 v = cameraAngle.eulerAngles;

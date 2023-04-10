@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
+# if UNITY_EDITOR || UNITY_EDITOR_64 || UNITY_EDITOR_WIN
 public class Tools : Editor
 {
     public static int NumberOfPictures;
@@ -83,7 +84,7 @@ public class Tools : Editor
         for (int i = 0; i < materials.Length; i++)
         {
             GameObject newSkyBox = Instantiate(prefab);
-            newSkyBox.GetComponent<Renderer>().material = materials[i];
+            // newSkyBox.GetComponent<Renderer>().material = materials[i];
             newSkyBox.GetComponent<SkyBox>().myMaterial = materials[i];
             newSkyBox.name = materials[i].name;
             newSkyBox.tag = "SkyBox";
@@ -97,6 +98,7 @@ public class Tools : Editor
         string tag = "XROrigin";
         GameObject XROrigin = GameObject.FindGameObjectsWithTag(tag)[0];
         XROrigin.GetComponent<Controller>().CurrentlyInside = PictureDetails[first_pic].mySkybox;
+        RenderSettings.skybox = PictureDetails[first_pic].mySkybox.GetComponent<SkyBox>().myMaterial;
         // Debug.Log("Created Succesfully");
     }
 
@@ -142,9 +144,13 @@ public class Tools : Editor
             PictureDetails[data[1]].mySkybox.GetComponent<SkyBox>().neighbours.Add(PictureDetails[data[0]].mySkybox);
             PictureDetails[data[0]].mySkybox.GetComponent<SkyBox>().neighbours.Add(PictureDetails[data[1]].mySkybox);
         }
-        for( int i = 0;i<objects.Length;i++){
-            objects[i].GetComponent<SkyBox>().addArrows();
-        }
+
+        RenderSettings.skybox = PictureDetails[first_pic].mySkybox.GetComponent<SkyBox>().myMaterial;
+        
+        // for( int i = 0;i<objects.Length;i++){
+        //     objects[i].GetComponent<SkyBox>().addArrows();
+        // }
+
         
     }
 
@@ -174,7 +180,10 @@ public class Tools : Editor
     [MenuItem("MyMenu/Add")]
     public static void Add()
     {
+        // CreateMaterial();
         CreateObjects();
         AddArrow();
     }
 }
+
+#endif
