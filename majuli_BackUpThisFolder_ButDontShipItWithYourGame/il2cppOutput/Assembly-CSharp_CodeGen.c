@@ -116,121 +116,139 @@ extern void Toggle_EnableObjects_m60A6A30B5EDEAD4DE23B55F24B3FD38E407DD934 (void
 extern void Toggle_FixedUpdate_mF7E1E05601258C4122529C249282348F31B28944 (void);
 // 0x00000034 System.Void Toggle::.ctor()
 extern void Toggle__ctor_m2215E96AA142273E39F68756308609BDDD81FD7F (void);
-// 0x00000035 System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
+// 0x00000035 System.Void VideoButton::PlayVideo()
+extern void VideoButton_PlayVideo_m4BEB70A3F775B3DDAF1DEED4B4A0FCF2763654ED (void);
+// 0x00000036 System.Void VideoButton::.ctor()
+extern void VideoButton__ctor_m154717E51EF27A4EC42A7F656766480CD739A029 (void);
+// 0x00000037 System.Void VideoController::OnEnable()
+extern void VideoController_OnEnable_mA04ABCD881A66648E4BD5DFCB86C1A5A0D5F3200 (void);
+// 0x00000038 System.Void VideoController::OnDisable()
+extern void VideoController_OnDisable_mC6DF10B660FBA0398934F41A45A726B6EC85BA3E (void);
+// 0x00000039 System.Void VideoController::DoStuff()
+extern void VideoController_DoStuff_mF48DD677FDE047BD8C31540B12D0D21D9C6D5B7C (void);
+// 0x0000003A System.Void VideoController::.ctor()
+extern void VideoController__ctor_m103EB9AC18E394EF526FBFAD32074E59551F3F06 (void);
+// 0x0000003B System.Void VideoInfo::Start()
+extern void VideoInfo_Start_m1A6C3927CCA95C3517B5B97CAA24B927C6EBAEFF (void);
+// 0x0000003C System.Void VideoInfo::Update()
+extern void VideoInfo_Update_m58E19D06B3DC2EC2C61169866AD770BFBFEAA71E (void);
+// 0x0000003D System.Void VideoInfo::.ctor()
+extern void VideoInfo__ctor_mC3CF68B044413D033E0E0EF623A9F2606E42BB1E (void);
+// 0x0000003E System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
 extern void XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF (void);
-// 0x00000036 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
+// 0x0000003F System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
 extern void XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E (void);
-// 0x00000037 System.Boolean UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::get_drawMeshes()
+// 0x00000040 System.Boolean UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::get_drawMeshes()
 extern void LeftHandVisualizer_get_drawMeshes_mD0385EF85C2A4032E0E47749BD05B6F6003A7414 (void);
-// 0x00000038 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::set_drawMeshes(System.Boolean)
+// 0x00000041 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::set_drawMeshes(System.Boolean)
 extern void LeftHandVisualizer_set_drawMeshes_mE5583B1C1DA68C4B3A70BE89FD531D0B2675D2E0 (void);
-// 0x00000039 System.Boolean UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::get_debugDrawJoints()
+// 0x00000042 System.Boolean UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::get_debugDrawJoints()
 extern void LeftHandVisualizer_get_debugDrawJoints_m1473A63862CDB7179ABB52ADB6D4AD2BE17A146F (void);
-// 0x0000003A System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::set_debugDrawJoints(System.Boolean)
+// 0x00000043 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::set_debugDrawJoints(System.Boolean)
 extern void LeftHandVisualizer_set_debugDrawJoints_m462AD549EB3CFAAB67D401042FC5DF438D69A50A (void);
-// 0x0000003B UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/VelocityType UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::get_velocityType()
+// 0x00000044 UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/VelocityType UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::get_velocityType()
 extern void LeftHandVisualizer_get_velocityType_m16D162E0CF37F24B02CA027E0D11C72A223BE830 (void);
-// 0x0000003C System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::set_velocityType(UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/VelocityType)
+// 0x00000045 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::set_velocityType(UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/VelocityType)
 extern void LeftHandVisualizer_set_velocityType_mE018A9C1556C84A12C6DAF19ECDD069D8D4FBFED (void);
-// 0x0000003D System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::Awake()
+// 0x00000046 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::Awake()
 extern void LeftHandVisualizer_Awake_m0DD5DABA1909840DF22D4B3FFAF9F8EB671CE363 (void);
-// 0x0000003E System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnEnable()
+// 0x00000047 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnEnable()
 extern void LeftHandVisualizer_OnEnable_mC89B643936B6F5DDB5EE984D59593D2F01B74544 (void);
-// 0x0000003F System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnDisable()
+// 0x00000048 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnDisable()
 extern void LeftHandVisualizer_OnDisable_m33CA0F6518C5C052D54875B1378D28BDD7653DCB (void);
-// 0x00000040 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnDestroy()
+// 0x00000049 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnDestroy()
 extern void LeftHandVisualizer_OnDestroy_m56D54815AB0A401003E7F5D629B286932CA913F1 (void);
-// 0x00000041 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::Update()
+// 0x0000004A System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::Update()
 extern void LeftHandVisualizer_Update_mA323D458A1469E235D23CF533B90E971BAF02B96 (void);
-// 0x00000042 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::UpdateRenderingVisibility(UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects,System.Boolean)
+// 0x0000004B System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::UpdateRenderingVisibility(UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects,System.Boolean)
 extern void LeftHandVisualizer_UpdateRenderingVisibility_m55291F168D6090A9A5AA200D13C1707514A48757 (void);
-// 0x00000043 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnTrackingAcquired(UnityEngine.XR.Hands.XRHand)
+// 0x0000004C System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnTrackingAcquired(UnityEngine.XR.Hands.XRHand)
 extern void LeftHandVisualizer_OnTrackingAcquired_m4D690EE325F434A562CDA146433C15CCB34D96B9 (void);
-// 0x00000044 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnTrackingLost(UnityEngine.XR.Hands.XRHand)
+// 0x0000004D System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnTrackingLost(UnityEngine.XR.Hands.XRHand)
 extern void LeftHandVisualizer_OnTrackingLost_m0F5DD18B31451C23CF0F76D1B2C57E71A63B4D4F (void);
-// 0x00000045 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnUpdatedHands(UnityEngine.XR.Hands.XRHandSubsystem,UnityEngine.XR.Hands.XRHandSubsystem/UpdateSuccessFlags,UnityEngine.XR.Hands.XRHandSubsystem/UpdateType)
+// 0x0000004E System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::OnUpdatedHands(UnityEngine.XR.Hands.XRHandSubsystem,UnityEngine.XR.Hands.XRHandSubsystem/UpdateSuccessFlags,UnityEngine.XR.Hands.XRHandSubsystem/UpdateType)
 extern void LeftHandVisualizer_OnUpdatedHands_m63F989A4FA9A63F6ADF8CD59C316C752C79B51C1 (void);
-// 0x00000046 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::.ctor()
+// 0x0000004F System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::.ctor()
 extern void LeftHandVisualizer__ctor_m503F28E05A2A288AE23727F6FDCC7BA05636CCDF (void);
-// 0x00000047 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::.cctor()
+// 0x00000050 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer::.cctor()
 extern void LeftHandVisualizer__cctor_m20536A0514718E8C42591CA01748417D98CF7DF9 (void);
-// 0x00000048 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::.ctor(UnityEngine.XR.Hands.Handedness,UnityEngine.Transform,UnityEngine.GameObject,UnityEngine.Material,UnityEngine.GameObject,UnityEngine.GameObject)
+// 0x00000051 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::.ctor(UnityEngine.XR.Hands.Handedness,UnityEngine.Transform,UnityEngine.GameObject,UnityEngine.Material,UnityEngine.GameObject,UnityEngine.GameObject)
 extern void HandGameObjects__ctor_m7C8BF105D91099BB71E93DE487C35540E1F2C616 (void);
-// 0x00000049 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::OnDestroy()
+// 0x00000052 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::OnDestroy()
 extern void HandGameObjects_OnDestroy_mD3AA7DE72F1829E459463D0EC1FC01D66CA1C964 (void);
-// 0x0000004A System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::ToggleDrawMesh(System.Boolean)
+// 0x00000053 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::ToggleDrawMesh(System.Boolean)
 extern void HandGameObjects_ToggleDrawMesh_mA32DC2B6F9C554BDBD9DE5301479A39C7A5611D0 (void);
-// 0x0000004B System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::ToggleDebugDrawJoints(System.Boolean)
+// 0x00000054 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::ToggleDebugDrawJoints(System.Boolean)
 extern void HandGameObjects_ToggleDebugDrawJoints_m7C00B124FE8632B4807E5FF1BDFD05FB9313C1FC (void);
-// 0x0000004C System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::SetVelocityType(UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/VelocityType)
+// 0x00000055 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::SetVelocityType(UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/VelocityType)
 extern void HandGameObjects_SetVelocityType_m45ACD71D5008A4F3BDB03E8D045C96A9AC26CB86 (void);
-// 0x0000004D System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::UpdateRootPose(UnityEngine.XR.Hands.XRHand)
+// 0x00000056 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::UpdateRootPose(UnityEngine.XR.Hands.XRHand)
 extern void HandGameObjects_UpdateRootPose_m686933B58C24AE053A22BAAF2A55640661B09284 (void);
-// 0x0000004E System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::UpdateJoints(Unity.XR.CoreUtils.XROrigin,UnityEngine.XR.Hands.XRHand,System.Boolean,System.Boolean,System.Boolean,UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/VelocityType)
+// 0x00000057 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::UpdateJoints(Unity.XR.CoreUtils.XROrigin,UnityEngine.XR.Hands.XRHand,System.Boolean,System.Boolean,System.Boolean,UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/VelocityType)
 extern void HandGameObjects_UpdateJoints_mABB68C021C717F5D19164D731A4D85425E576B9E (void);
-// 0x0000004F System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::UpdateJoint(System.Boolean,UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/VelocityType,UnityEngine.Pose,UnityEngine.XR.Hands.XRHandJoint,UnityEngine.Pose&,System.Boolean)
+// 0x00000058 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::UpdateJoint(System.Boolean,UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/VelocityType,UnityEngine.Pose,UnityEngine.XR.Hands.XRHandJoint,UnityEngine.Pose&,System.Boolean)
 extern void HandGameObjects_UpdateJoint_m78B7DF2AFDA7598109469665A3D7445AD31DB93C (void);
-// 0x00000050 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::ToggleRenderers(System.Boolean,UnityEngine.Transform)
-// 0x00000051 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::.cctor()
+// 0x00000059 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::ToggleRenderers(System.Boolean,UnityEngine.Transform)
+// 0x0000005A System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::.cctor()
 extern void HandGameObjects__cctor_mB7FDF6DE350FF3537F46B104ADDBE83CCC510FA5 (void);
-// 0x00000052 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::<.ctor>g__AssignJoint|9_0(UnityEngine.XR.Hands.XRHandJointID,UnityEngine.Transform,UnityEngine.Transform,UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects/<>c__DisplayClass9_0&)
+// 0x0000005B System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects::<.ctor>g__AssignJoint|9_0(UnityEngine.XR.Hands.XRHandJointID,UnityEngine.Transform,UnityEngine.Transform,UnityEngine.XR.Hands.Samples.VisualizerSample.LeftHandVisualizer/HandGameObjects/<>c__DisplayClass9_0&)
 extern void HandGameObjects_U3C_ctorU3Eg__AssignJointU7C9_0_m4DA0F7B90A18ECEBDCE1A366D728E6F02080D1EE (void);
-// 0x00000053 System.Boolean UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::get_drawMeshes()
+// 0x0000005C System.Boolean UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::get_drawMeshes()
 extern void RightHandVisualizer_get_drawMeshes_m0983AFC2A6617A7A1F7A93C282C077D1D29E8E46 (void);
-// 0x00000054 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::set_drawMeshes(System.Boolean)
+// 0x0000005D System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::set_drawMeshes(System.Boolean)
 extern void RightHandVisualizer_set_drawMeshes_m25C8359B6411E1D0C44DB541D5D92A7E58089DA4 (void);
-// 0x00000055 System.Boolean UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::get_debugDrawJoints()
+// 0x0000005E System.Boolean UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::get_debugDrawJoints()
 extern void RightHandVisualizer_get_debugDrawJoints_mE46FB66A3956C43169EFD34A96F417CAEAAE9E3A (void);
-// 0x00000056 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::set_debugDrawJoints(System.Boolean)
+// 0x0000005F System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::set_debugDrawJoints(System.Boolean)
 extern void RightHandVisualizer_set_debugDrawJoints_m657B7662636D6674AC3622A731BBF3FADE564EBC (void);
-// 0x00000057 UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/VelocityType UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::get_velocityType()
+// 0x00000060 UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/VelocityType UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::get_velocityType()
 extern void RightHandVisualizer_get_velocityType_m952846F163674FBAA7404734578B6AC5C7B5CCE0 (void);
-// 0x00000058 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::set_velocityType(UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/VelocityType)
+// 0x00000061 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::set_velocityType(UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/VelocityType)
 extern void RightHandVisualizer_set_velocityType_m21ECEB072A35BBEFBC571EA6E0F8BC21508EF88B (void);
-// 0x00000059 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::Awake()
+// 0x00000062 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::Awake()
 extern void RightHandVisualizer_Awake_mA6AD0943BE54D711A5E89164093E1E93BAB879D2 (void);
-// 0x0000005A System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnEnable()
+// 0x00000063 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnEnable()
 extern void RightHandVisualizer_OnEnable_mD6AEAEB48CB2F835EFE311C8CBE67C9AC969A6D6 (void);
-// 0x0000005B System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnDisable()
+// 0x00000064 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnDisable()
 extern void RightHandVisualizer_OnDisable_m637EC0531D0A8585BCB4F5C03741D7E657F8A3E9 (void);
-// 0x0000005C System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnDestroy()
+// 0x00000065 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnDestroy()
 extern void RightHandVisualizer_OnDestroy_m91F329FD64BE21E6A6EEA39C7B24389D854479FE (void);
-// 0x0000005D System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::Update()
+// 0x00000066 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::Update()
 extern void RightHandVisualizer_Update_mB0B7993C3263E1F321A72F1E458172F953962154 (void);
-// 0x0000005E System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::UpdateRenderingVisibility(UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects,System.Boolean)
+// 0x00000067 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::UpdateRenderingVisibility(UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects,System.Boolean)
 extern void RightHandVisualizer_UpdateRenderingVisibility_mB785C50C66CEA35F4795F11A6A1168461790D75D (void);
-// 0x0000005F System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnTrackingAcquired(UnityEngine.XR.Hands.XRHand)
+// 0x00000068 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnTrackingAcquired(UnityEngine.XR.Hands.XRHand)
 extern void RightHandVisualizer_OnTrackingAcquired_mC94589E3078091908E377A3969E585FA65B88B25 (void);
-// 0x00000060 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnTrackingLost(UnityEngine.XR.Hands.XRHand)
+// 0x00000069 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnTrackingLost(UnityEngine.XR.Hands.XRHand)
 extern void RightHandVisualizer_OnTrackingLost_mF030E3EC983A141AF64C6BA77A89A1050853EE67 (void);
-// 0x00000061 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnUpdatedHands(UnityEngine.XR.Hands.XRHandSubsystem,UnityEngine.XR.Hands.XRHandSubsystem/UpdateSuccessFlags,UnityEngine.XR.Hands.XRHandSubsystem/UpdateType)
+// 0x0000006A System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::OnUpdatedHands(UnityEngine.XR.Hands.XRHandSubsystem,UnityEngine.XR.Hands.XRHandSubsystem/UpdateSuccessFlags,UnityEngine.XR.Hands.XRHandSubsystem/UpdateType)
 extern void RightHandVisualizer_OnUpdatedHands_m60E61BFBECE2A440F011E6EF640A5668A6562782 (void);
-// 0x00000062 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::.ctor()
+// 0x0000006B System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::.ctor()
 extern void RightHandVisualizer__ctor_m46E07AA447EA34202F62A08B8D9240022E041FB8 (void);
-// 0x00000063 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::.cctor()
+// 0x0000006C System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer::.cctor()
 extern void RightHandVisualizer__cctor_mA7BBC229A58FFD6B3A82BB3CE0E758F30F816C15 (void);
-// 0x00000064 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::.ctor(UnityEngine.XR.Hands.Handedness,UnityEngine.Transform,UnityEngine.GameObject,UnityEngine.Material,UnityEngine.GameObject,UnityEngine.GameObject)
+// 0x0000006D System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::.ctor(UnityEngine.XR.Hands.Handedness,UnityEngine.Transform,UnityEngine.GameObject,UnityEngine.Material,UnityEngine.GameObject,UnityEngine.GameObject)
 extern void HandGameObjects__ctor_m4B3ABF1BB5221E99F8998DC77562B8078459B054 (void);
-// 0x00000065 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::OnDestroy()
+// 0x0000006E System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::OnDestroy()
 extern void HandGameObjects_OnDestroy_m629461090EBB5B11AB1A69FF94A8D5E71453201E (void);
-// 0x00000066 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::ToggleDrawMesh(System.Boolean)
+// 0x0000006F System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::ToggleDrawMesh(System.Boolean)
 extern void HandGameObjects_ToggleDrawMesh_m93229309413C5BD7B66A6E1F752E66A289538932 (void);
-// 0x00000067 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::ToggleDebugDrawJoints(System.Boolean)
+// 0x00000070 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::ToggleDebugDrawJoints(System.Boolean)
 extern void HandGameObjects_ToggleDebugDrawJoints_m3C1679A45E62B0F32D9883BC045FA4653690EC43 (void);
-// 0x00000068 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::SetVelocityType(UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/VelocityType)
+// 0x00000071 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::SetVelocityType(UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/VelocityType)
 extern void HandGameObjects_SetVelocityType_mF51757A5DDB3FAF34C8475E620C73F7926830BF7 (void);
-// 0x00000069 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::UpdateRootPose(UnityEngine.XR.Hands.XRHand)
+// 0x00000072 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::UpdateRootPose(UnityEngine.XR.Hands.XRHand)
 extern void HandGameObjects_UpdateRootPose_m918EF10CC6D26C20050D7C263FF85AFC8FBF1470 (void);
-// 0x0000006A System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::UpdateJoints(Unity.XR.CoreUtils.XROrigin,UnityEngine.XR.Hands.XRHand,System.Boolean,System.Boolean,System.Boolean,UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/VelocityType)
+// 0x00000073 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::UpdateJoints(Unity.XR.CoreUtils.XROrigin,UnityEngine.XR.Hands.XRHand,System.Boolean,System.Boolean,System.Boolean,UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/VelocityType)
 extern void HandGameObjects_UpdateJoints_mF69FFDDBDF7E81FE2B509969BCB1DC2C41D12896 (void);
-// 0x0000006B System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::UpdateJoint(System.Boolean,UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/VelocityType,UnityEngine.Pose,UnityEngine.XR.Hands.XRHandJoint,UnityEngine.Pose&,System.Boolean)
+// 0x00000074 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::UpdateJoint(System.Boolean,UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/VelocityType,UnityEngine.Pose,UnityEngine.XR.Hands.XRHandJoint,UnityEngine.Pose&,System.Boolean)
 extern void HandGameObjects_UpdateJoint_mEF2C0E9609E6B80123EA66433867D4E6F67E03D3 (void);
-// 0x0000006C System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::ToggleRenderers(System.Boolean,UnityEngine.Transform)
-// 0x0000006D System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::.cctor()
+// 0x00000075 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::ToggleRenderers(System.Boolean,UnityEngine.Transform)
+// 0x00000076 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::.cctor()
 extern void HandGameObjects__cctor_mC5693A57389F6EA8FED0AB5B4BA4537FC0DF4FA0 (void);
-// 0x0000006E System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::<.ctor>g__AssignJoint|9_0(UnityEngine.XR.Hands.XRHandJointID,UnityEngine.Transform,UnityEngine.Transform,UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects/<>c__DisplayClass9_0&)
+// 0x00000077 System.Void UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects::<.ctor>g__AssignJoint|9_0(UnityEngine.XR.Hands.XRHandJointID,UnityEngine.Transform,UnityEngine.Transform,UnityEngine.XR.Hands.Samples.VisualizerSample.RightHandVisualizer/HandGameObjects/<>c__DisplayClass9_0&)
 extern void HandGameObjects_U3C_ctorU3Eg__AssignJointU7C9_0_m568B622187D4C3A5607E4F57ED91FCDC74B1633C (void);
-static Il2CppMethodPointer s_methodPointers[110] = 
+static Il2CppMethodPointer s_methodPointers[119] = 
 {
 	ArrowScript_Start_mA62A5B8BE89CD689296DCFBEE615334B74E4A7CA,
 	ArrowScript_Update_m4747202A0415B5CB7F2F859B24D76DD173F7FDDF,
@@ -284,6 +302,15 @@ static Il2CppMethodPointer s_methodPointers[110] =
 	Toggle_EnableObjects_m60A6A30B5EDEAD4DE23B55F24B3FD38E407DD934,
 	Toggle_FixedUpdate_mF7E1E05601258C4122529C249282348F31B28944,
 	Toggle__ctor_m2215E96AA142273E39F68756308609BDDD81FD7F,
+	VideoButton_PlayVideo_m4BEB70A3F775B3DDAF1DEED4B4A0FCF2763654ED,
+	VideoButton__ctor_m154717E51EF27A4EC42A7F656766480CD739A029,
+	VideoController_OnEnable_mA04ABCD881A66648E4BD5DFCB86C1A5A0D5F3200,
+	VideoController_OnDisable_mC6DF10B660FBA0398934F41A45A726B6EC85BA3E,
+	VideoController_DoStuff_mF48DD677FDE047BD8C31540B12D0D21D9C6D5B7C,
+	VideoController__ctor_m103EB9AC18E394EF526FBFAD32074E59551F3F06,
+	VideoInfo_Start_m1A6C3927CCA95C3517B5B97CAA24B927C6EBAEFF,
+	VideoInfo_Update_m58E19D06B3DC2EC2C61169866AD770BFBFEAA71E,
+	VideoInfo__ctor_mC3CF68B044413D033E0E0EF623A9F2606E42BB1E,
 	XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF,
 	XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E,
 	LeftHandVisualizer_get_drawMeshes_mD0385EF85C2A4032E0E47749BD05B6F6003A7414,
@@ -343,123 +370,132 @@ static Il2CppMethodPointer s_methodPointers[110] =
 	HandGameObjects__cctor_mC5693A57389F6EA8FED0AB5B4BA4537FC0DF4FA0,
 	HandGameObjects_U3C_ctorU3Eg__AssignJointU7C9_0_m568B622187D4C3A5607E4F57ED91FCDC74B1633C,
 };
-static const int32_t s_InvokerIndices[110] = 
+static const int32_t s_InvokerIndices[119] = 
 {
-	2176,
-	2176,
-	2057,
-	2176,
-	2176,
-	2176,
-	2176,
-	5814,
-	5070,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	1810,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
-	2057,
-	1765,
-	2057,
-	1765,
-	2097,
-	1801,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
+	2178,
+	2178,
+	2059,
+	2178,
+	2178,
+	2178,
+	2178,
+	5817,
+	5073,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	1812,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
+	2059,
+	1767,
+	2059,
+	1767,
+	2099,
+	1803,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
 	1146,
-	1860,
-	1860,
+	1862,
+	1862,
 	724,
-	2176,
-	5863,
+	2178,
+	5866,
 	160,
-	2176,
-	1765,
-	1765,
-	1801,
-	1860,
+	2178,
+	1767,
+	1767,
+	1803,
+	1862,
 	185,
 	148,
 	0,
-	5863,
+	5866,
 	427,
-	2057,
-	1765,
-	2057,
-	1765,
-	2097,
-	1801,
-	2176,
-	2176,
-	2176,
-	2176,
-	2176,
+	2059,
+	1767,
+	2059,
+	1767,
+	2099,
+	1803,
+	2178,
+	2178,
+	2178,
+	2178,
+	2178,
 	1146,
-	1860,
-	1860,
+	1862,
+	1862,
 	724,
-	2176,
-	5863,
+	2178,
+	5866,
 	160,
-	2176,
-	1765,
-	1765,
-	1801,
-	1860,
+	2178,
+	1767,
+	1767,
+	1803,
+	1862,
 	185,
 	148,
 	0,
-	5863,
+	5866,
 	427,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[2] = 
 {
-	{ 0x06000050, { 0, 4 } },
-	{ 0x0600006C, { 4, 4 } },
+	{ 0x06000059, { 0, 4 } },
+	{ 0x06000075, { 4, 4 } },
 };
 extern const uint32_t g_rgctx_Component_TryGetComponent_TisTRenderer_t5F0C474A6272DC4575F17CB0C8A5D275B96BBE59_m421A67380BEE2A5BD6AC1250B9BE68E82F88AC33;
 extern const uint32_t g_rgctx_TRendererU26_t4D8D15569344CF9824D8CA81846A4D2B727EEB2E;
@@ -484,7 +520,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	110,
+	119,
 	s_methodPointers,
 	0,
 	NULL,

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 40545342c2c3dc3978f1d360cb67e9ea, type: 2}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.25618428, g: 0.22331122, b: 0.2050433, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -807,6 +807,59 @@ MonoBehaviour:
       m_Action: Key Press
       m_Flags: 0
     m_Flags: 0
+--- !u!1 &175762168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175762170}
+  - component: {fileID: 175762169}
+  m_Layer: 0
+  m_Name: A1
+  m_TagString: SkyBox
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &175762169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175762168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c94f5f71d650262bfd0e1a7fb3a616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myMaterial: {fileID: 0}
+  neighbours:
+  - {fileID: 0}
+  arrows: []
+  locationName: 
+  XROrigin: {fileID: 0}
+  rightTrigger: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  counter: 10
+--- !u!4 &175762170
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175762168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &210842797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,59 +2114,6 @@ MonoBehaviour:
   m_VelocityPrefab: {fileID: 8538602047018081646, guid: 629fd7882ec6bfc499a5fcf20035282b,
     type: 3}
   m_VelocityType: 2
---- !u!1 &617759651
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 617759653}
-  - component: {fileID: 617759652}
-  m_Layer: 0
-  m_Name: R0010330
-  m_TagString: SkyBox
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &617759652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 617759651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c94f5f71d650262bfd0e1a7fb3a616, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myMaterial: {fileID: 2100000, guid: 9d840315280948424a397ca6ec3dd3ae, type: 2}
-  neighbours:
-  - {fileID: 1760968991}
-  - {fileID: 1934348306}
-  arrows: []
-  locationName: 
-  XROrigin: {fileID: 0}
-  rightTrigger: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
-    type: 3}
---- !u!4 &617759653
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 617759651}
-  m_LocalRotation: {x: 0, y: -0.26471466, z: 0, w: 0.9643268}
-  m_LocalPosition: {x: -166.29109, y: 0, z: -33.452145}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &662632307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,59 +2949,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68414a40d816f264aa6ba6e0c9ee93e2, type: 3}
---- !u!1 &1192129344
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1192129346}
-  - component: {fileID: 1192129345}
-  m_Layer: 0
-  m_Name: R0010326
-  m_TagString: SkyBox
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1192129345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192129344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c94f5f71d650262bfd0e1a7fb3a616, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myMaterial: {fileID: 2100000, guid: 576ac1e354f2ffc1c9efae5e958dd7d9, type: 2}
-  neighbours:
-  - {fileID: 1793646835}
-  - {fileID: 1760968991}
-  arrows: []
-  locationName: 
-  XROrigin: {fileID: 0}
-  rightTrigger: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
-    type: 3}
---- !u!4 &1192129346
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192129344}
-  m_LocalRotation: {x: 0, y: 0.043444984, z: 0, w: 0.99905586}
-  m_LocalPosition: {x: -29.573635, y: 0, z: 12.120342}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1276584325
 GameObject:
   m_ObjectHideFlags: 0
@@ -4375,59 +4322,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646083843}
   m_CullTransparentMesh: 1
---- !u!1 &1760968991
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1760968993}
-  - component: {fileID: 1760968992}
-  m_Layer: 0
-  m_Name: R0010328
-  m_TagString: SkyBox
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1760968992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760968991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c94f5f71d650262bfd0e1a7fb3a616, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myMaterial: {fileID: 2100000, guid: 1b952fa0fcd728fa9a328b9c3e931d7c, type: 2}
-  neighbours:
-  - {fileID: 1192129344}
-  - {fileID: 617759651}
-  arrows: []
-  locationName: 
-  XROrigin: {fileID: 0}
-  rightTrigger: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
-    type: 3}
---- !u!4 &1760968993
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760968991}
-  m_LocalRotation: {x: 0, y: -0.18866697, z: 0, w: 0.9820411}
-  m_LocalPosition: {x: -53.81432, y: 0, z: 0.9696274}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1764741304
 GameObject:
   m_ObjectHideFlags: 0
@@ -4615,58 +4509,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &1793646835
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1793646837}
-  - component: {fileID: 1793646836}
-  m_Layer: 0
-  m_Name: R0010325
-  m_TagString: SkyBox
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1793646836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793646835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c94f5f71d650262bfd0e1a7fb3a616, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myMaterial: {fileID: 2100000, guid: 40545342c2c3dc3978f1d360cb67e9ea, type: 2}
-  neighbours:
-  - {fileID: 1192129344}
-  arrows: []
-  locationName: 
-  XROrigin: {fileID: 0}
-  rightTrigger: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
-    type: 3}
---- !u!4 &1793646837
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793646835}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1814232802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4981,58 +4823,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857192679}
   m_CullTransparentMesh: 1
---- !u!1 &1934348306
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1934348308}
-  - component: {fileID: 1934348307}
-  m_Layer: 0
-  m_Name: R0010331
-  m_TagString: SkyBox
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1934348307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934348306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c94f5f71d650262bfd0e1a7fb3a616, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myMaterial: {fileID: 2100000, guid: bae0f99152f9f683283c49361263c23b, type: 2}
-  neighbours:
-  - {fileID: 617759651}
-  arrows: []
-  locationName: 
-  XROrigin: {fileID: 0}
-  rightTrigger: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
-    type: 3}
---- !u!4 &1934348308
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934348306}
-  m_LocalRotation: {x: 0, y: -0.035335585, z: 0, w: 0.9993755}
-  m_LocalPosition: {x: -175.50255, y: 0, z: -32.96733}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1985044922 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
@@ -8842,7 +8632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LeftHand: {fileID: 3113582725561334872}
   m_RightHand: {fileID: 3113582726616102165}
-  m_LeftController: {fileID: 346507072209881756}
+  m_LeftController: {fileID: 0}
   m_RightController: {fileID: 0}
 --- !u!114 &7497717354579277667
 MonoBehaviour:
@@ -8856,7 +8646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58a82dea14f7f61faaed208e41f2fd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentlyInside: {fileID: 1793646835}
+  CurrentlyInside: {fileID: 175762168}
   transparentMaterial: {fileID: 0}
 --- !u!4 &7648470161512579809
 Transform:

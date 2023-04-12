@@ -14,9 +14,9 @@ public class Tools : Editor
     public static float offsetX;
     public static float offsetY;
     public static float offsetAngle;
-    public static float magnify=1000000f;
-    public static string first_pic = "R0010325";
-    public static string site_name = "Rawanapur";
+    public static float magnify = 1000000f;
+    public static string first_pic = "A1";
+    public static string site_name = "Auniati";
     private static void ParseData()
     {
         var filePath = Application.dataPath + "/NodeInformation/myfile.txt";
@@ -168,6 +168,19 @@ public class Tools : Editor
         }
     }
 
+    [MenuItem("MyMenu/Add materials ")]
+    public static void addmat()
+    {
+
+
+        Material[] materials = Resources.LoadAll<Material>("Materials");
+        foreach(Material m in materials){
+         Camera.main.gameObject.GetComponent<TestMat>().materialList.Add(m);
+
+        }
+        
+    }
+
 
     [MenuItem("MyMenu/Clear")]
     public static void Clear()
@@ -181,6 +194,7 @@ public class Tools : Editor
     public static void Add()
     {
         // CreateMaterial();
+        Clear();
         CreateObjects();
         AddArrow();
     }

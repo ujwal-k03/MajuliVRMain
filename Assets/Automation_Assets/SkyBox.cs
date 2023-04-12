@@ -12,6 +12,7 @@ public class SkyBox : MonoBehaviour
     public string locationName;
     public GameObject XROrigin;
     public InputActionReference rightTrigger;
+    public int counter = 10;
 
     void Start()
     {
@@ -30,13 +31,14 @@ public class SkyBox : MonoBehaviour
     void Update()
     {   
         if(rightTrigger.action.triggered){
-           if(XROrigin.GetComponent<Controller>().CurrentlyInside == gameObject){
+           if(XROrigin.GetComponent<Controller>().CurrentlyInside == gameObject && (counter <= 0)){
                 foreach(GameObject arrow in arrows){
                     if(arrow.GetComponent<ArrowScript>().isActive()){
                         XROrigin.GetComponent<Controller>().CurrentlyInside = arrow.GetComponent<ArrowScript>().TransformTo;
                         GameObject nextObject = arrow.GetComponent<ArrowScript>().TransformTo;
                         XROrigin.transform.position = arrow.GetComponent<ArrowScript>().TransformTo.transform.position;
                         nextObject.GetComponent<SkyBox>().addArrows();
+                        nextObject.GetComponent<SkyBox>().counter = 10;
                         RenderSettings.skybox = nextObject.GetComponent<SkyBox>().myMaterial;
                         destroyArrows();
                         break;
@@ -44,6 +46,7 @@ public class SkyBox : MonoBehaviour
                 }
             }
         }
+        counter--;
     }
 
     public void addArrows(){
