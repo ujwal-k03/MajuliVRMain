@@ -92,14 +92,12 @@ public class Tools : Editor
             Quaternion newRotation = Quaternion.Euler(0, PictureDetails[newSkyBox.name].pose,0);
             newSkyBox.transform.rotation = newRotation;
             PictureDetails[newSkyBox.name].mySkybox = newSkyBox;
-            // Debug.Log("Creating Succesfully");
         }
         Debug.Log(PictureDetails[first_pic].mySkybox);
         string tag = "XROrigin";
         GameObject XROrigin = GameObject.FindGameObjectsWithTag(tag)[0];
         XROrigin.GetComponent<Controller>().CurrentlyInside = PictureDetails[first_pic].mySkybox;
         RenderSettings.skybox = PictureDetails[first_pic].mySkybox.GetComponent<SkyBox>().myMaterial;
-        // Debug.Log("Created Succesfully");
     }
 
     //Delete Objects with tag
@@ -126,7 +124,7 @@ public class Tools : Editor
             PrefabUtility.ApplyPrefabInstance(instance, InteractionMode.AutomatedAction);
         }
     }
-    [MenuItem("MyMenu/Add Arrows")]
+    [MenuItem("MyMenu/Add Neighbours")]
     public static void AddArrow()
     {
         string tag = "SkyBox";
@@ -172,11 +170,9 @@ public class Tools : Editor
     public static void addmat()
     {
 
-
         Material[] materials = Resources.LoadAll<Material>("Materials");
         foreach(Material m in materials){
          Camera.main.gameObject.GetComponent<TestMat>().materialList.Add(m);
-
         }
         
     }

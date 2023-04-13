@@ -10,28 +10,29 @@ public class SkyBox : MonoBehaviour
     public List<GameObject> neighbours;
     public List<GameObject> arrows;
     public string locationName;
-    public GameObject XROrigin;
+    static public GameObject XROrigin;
     public InputActionReference rightTrigger;
     public int counter = 10;
 
     void Start()
     {
         string tag = "XROrigin";
-        XROrigin = GameObject.FindGameObjectsWithTag(tag)[0];
+        if(XROrigin==null){
+            XROrigin = GameObject.FindGameObjectsWithTag(tag)[0];
+        }
         if(gameObject == XROrigin.GetComponent<Controller>().CurrentlyInside){
             XROrigin.transform.position = transform.position;
+            RenderSettings.skybox = myMaterial;
             addArrows();
-            // makemeVisible();
         }
-        else{
-            // makeMeTransparent();         
-        }
+        
     }
     // Update is called once per frame
     void Update()
     {   
+        //Removed counter
         if(rightTrigger.action.triggered){
-           if(XROrigin.GetComponent<Controller>().CurrentlyInside == gameObject && (counter <= 0)){
+           if(XROrigin.GetComponent<Controller>().CurrentlyInside == gameObject ){
                 foreach(GameObject arrow in arrows){
                     if(arrow.GetComponent<ArrowScript>().isActive()){
                         XROrigin.GetComponent<Controller>().CurrentlyInside = arrow.GetComponent<ArrowScript>().TransformTo;
@@ -39,7 +40,9 @@ public class SkyBox : MonoBehaviour
                         XROrigin.transform.position = arrow.GetComponent<ArrowScript>().TransformTo.transform.position;
                         nextObject.GetComponent<SkyBox>().addArrows();
                         nextObject.GetComponent<SkyBox>().counter = 10;
+                        // XROrigin.transform.rotation = Quaternion.Inverse(nextObject.transform.rotation);
                         RenderSettings.skybox = nextObject.GetComponent<SkyBox>().myMaterial;
+                        RenderSettings.skybox.SetFloat("_Rotation", -nextObject.transform.rotation.eulerAngles.y);
                         destroyArrows();
                         break;
                     }
@@ -59,7 +62,7 @@ public class SkyBox : MonoBehaviour
             arrow.transform.rotation =Quaternion.LookRotation(direction, Vector3.up);
             direction = -direction;
             Vector3 normalizedDirection = direction.normalized;
-            Vector3 position = a + 2.5f * normalizedDirection;
+            Vector3 position = a + 1.7f * normalizedDirection;
             position.y = -0.4f;
             arrow.transform.position = position;
             arrow.GetComponent<ArrowScript>().MyParent = gameObject;
@@ -77,28 +80,5 @@ public class SkyBox : MonoBehaviour
             UnityEngine.Object.DestroyImmediate(arrow);
         }
         arrows = new List<GameObject>(); 
-    }
-    // void makeMeTransparent(){
-    //     Material transparent = Resources.Load<Material>("OtherMaterials/Transparent");
-    //     gameObject.GetComponent<Renderer>().material = transparent;
-    //     foreach(GameObject arrow in arrows){
-    //         arrow.GetComponent<Renderer>().material = transparent;
-    //     }
-    // }
-
-
-    void makemeVisible(){
-        gameObject.GetComponent<Renderer>().material = gameObject.GetComponent<SkyBox>().myMaterial;
-        Material green = Resources.Load<Material>("OtherMaterials/GreenMaterial");
-        foreach(GameObject arrow in arrows){
-            arrow.GetComponent<Renderer>().material = green;
-        }
-    }
-    void makeObjVisible(GameObject obj){
-        obj.GetComponent<Renderer>().material = obj.GetComponent<SkyBox>().myMaterial;
-        Material green = Resources.Load<Material>("OtherMaterials/GreenMaterial");
-        foreach(GameObject arrow in obj.GetComponent<SkyBox>().arrows){
-            arrow.GetComponent<Renderer>().material = green;
-        }
     }
 }

@@ -1686,8 +1686,10 @@ struct TestMat_tD7CD960111F522FA09DE10852D8CE030E1E4FBCA  : public MonoBehaviour
 	List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B* ___materialList_4;
 	// UnityEngine.InputSystem.InputAction TestMat::action
 	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___action_5;
+	// UnityEngine.InputSystem.InputActionReference TestMat::actionRef
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___actionRef_6;
 	// System.Int32 TestMat::ctr
-	int32_t ___ctr_6;
+	int32_t ___ctr_7;
 };
 
 // Toggle
@@ -4449,7 +4451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestMat_Start_m4F14627DC42E995FCAEA004B7
 	}
 	{
 		// ctr = 0;
-		__this->___ctr_6 = 0;
+		__this->___ctr_7 = 0;
 		// RenderSettings.skybox = materialList[0];
 		List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B* L_0 = __this->___materialList_4;
 		NullCheck(L_0);
@@ -4482,33 +4484,58 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestMat_Update_m52069966D352B70D79D9D379
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
+	int32_t G_B3_0 = 0;
 	{
-		// if(action.triggered){
+		// if(action.triggered || actionRef.action.triggered){
 		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0 = __this->___action_5;
 		NullCheck(L_0);
 		bool L_1;
 		L_1 = InputAction_get_triggered_m27FD9FEF221D1BD365F2A8CD0131CE5F2A97B7BB(L_0, NULL);
-		V_0 = L_1;
-		bool L_2 = V_0;
-		if (!L_2)
+		if (L_1)
 		{
-			goto IL_0037;
+			goto IL_0020;
+		}
+	}
+	{
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_2 = __this->___actionRef_6;
+		NullCheck(L_2);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_3;
+		L_3 = InputActionReference_get_action_m395EDEA6A93B54555D22323FDA6E1B1E931CE6EF(L_2, NULL);
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = InputAction_get_triggered_m27FD9FEF221D1BD365F2A8CD0131CE5F2A97B7BB(L_3, NULL);
+		G_B3_0 = ((int32_t)(L_4));
+		goto IL_0021;
+	}
+
+IL_0020:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0021:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_5 = V_0;
+		if (!L_5)
+		{
+			goto IL_004c;
 		}
 	}
 	{
 		// ctr++;
-		int32_t L_3 = __this->___ctr_6;
-		__this->___ctr_6 = ((int32_t)il2cpp_codegen_add(L_3, 1));
+		int32_t L_6 = __this->___ctr_7;
+		__this->___ctr_7 = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		// RenderSettings.skybox = materialList[ctr];
-		List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B* L_4 = __this->___materialList_4;
-		int32_t L_5 = __this->___ctr_6;
-		NullCheck(L_4);
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_6;
-		L_6 = List_1_get_Item_m70F5CFC2DEA9332B78C5ADC0EE1CE1B7465B1456(L_4, L_5, List_1_get_Item_m70F5CFC2DEA9332B78C5ADC0EE1CE1B7465B1456_RuntimeMethod_var);
-		RenderSettings_set_skybox_mC520BDF769C5B2824BE2CCC4ADC9CEBEE17A60B4(L_6, NULL);
+		List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B* L_7 = __this->___materialList_4;
+		int32_t L_8 = __this->___ctr_7;
+		NullCheck(L_7);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_9;
+		L_9 = List_1_get_Item_m70F5CFC2DEA9332B78C5ADC0EE1CE1B7465B1456(L_7, L_8, List_1_get_Item_m70F5CFC2DEA9332B78C5ADC0EE1CE1B7465B1456_RuntimeMethod_var);
+		RenderSettings_set_skybox_mC520BDF769C5B2824BE2CCC4ADC9CEBEE17A60B4(L_9, NULL);
 	}
 
-IL_0037:
+IL_004c:
 	{
 		// }
 		return;
