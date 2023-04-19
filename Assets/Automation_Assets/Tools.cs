@@ -1,5 +1,7 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEditor.SceneManagement;
+using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -152,6 +154,58 @@ public class Tools : Editor
         
     }
 
+    [MenuItem("Minimap/Add buttons")]
+    public static void AddButtons()
+    {   
+        // Get the name of the active scene
+        String sceneName = EditorSceneManager.GetActiveScene().name;
+        Debug.Log(sceneName);
+
+        GameObject prefab = Resources.Load<GameObject>("Prefabs/MinimapButton");
+        GameObject minimapContent = GameObject.FindGameObjectWithTag("MinimapContent");
+
+        String filePath = Application.dataPath + "/Maps/" + sceneName + "/buttons.txt";
+
+        string[] lines = File.ReadAllLines(filePath);
+        int n = lines.Length;
+
+        
+        Image image = minimapContent.GetComponent<Image>();
+        float width = image.sprite.rect.width;
+        float height = image.sprite.rect.height;
+
+        for(int i=0; i<n; i++){
+            String[] data = lines[i].Split(' ');
+            String nodeName = data[0];
+            float x = float.Parse(data[1]);
+            float y = float.Parse(data[2]); 
+            
+            // Create new button and assign name and skybox
+            GameObject mySkybox = GameObject.Find(nodeName);
+            GameObject button = Instantiate<GameObject>(prefab, minimapContent.transform);
+            
+            button.name = nodeName;
+            button.GetComponent<Teleport>().mySkyBox = mySkybox;
+
+            // Give button new position
+            RectTransform rectTransform =  button.GetComponent<RectTransform>();
+            rectTransform.anchoredPosition = new Vector3((x/width) * 160.0f, (y/height) * 90.0f, 0);
+            
+        }
+    }
+
+    [MenuItem("Minimap/Clear buttons")]
+    public static void ClearButtons()
+    {   
+        string tag = "MinimapButton";
+        GameObject[] objects = GameObject.FindGameObjectsWithTag(tag);
+        foreach (GameObject obj in objects)
+        {
+            UnityEngine.Object.DestroyImmediate(obj);
+        }
+    }
+
+
     [MenuItem("MyMenu/Remove arrows")]
     public static void RemoveArrow()
     {
@@ -164,17 +218,6 @@ public class Tools : Editor
         {
             UnityEngine.Object.DestroyImmediate(objects[i]);
         }
-    }
-
-    [MenuItem("MyMenu/Add materials ")]
-    public static void addmat()
-    {
-
-        Material[] materials = Resources.LoadAll<Material>("Materials");
-        foreach(Material m in materials){
-         Camera.main.gameObject.GetComponent<TestMat>().materialList.Add(m);
-        }
-        
     }
 
 

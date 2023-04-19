@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/HandsDemoScene.unity
     guid: 3ff35cecbcc52cc42945cf531638a60a
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/Auniati.unity
     guid: 2433e4cbfa8cf6d40aef6f6313304419
   - enabled: 0
     path: Assets/Scenes/Test.unity

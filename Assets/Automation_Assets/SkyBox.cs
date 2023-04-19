@@ -35,15 +35,16 @@ public class SkyBox : MonoBehaviour
            if(XROrigin.GetComponent<Controller>().CurrentlyInside == gameObject ){
                 foreach(GameObject arrow in arrows){
                     if(arrow.GetComponent<ArrowScript>().isActive()){
-                        XROrigin.GetComponent<Controller>().CurrentlyInside = arrow.GetComponent<ArrowScript>().TransformTo;
-                        GameObject nextObject = arrow.GetComponent<ArrowScript>().TransformTo;
-                        XROrigin.transform.position = arrow.GetComponent<ArrowScript>().TransformTo.transform.position;
-                        nextObject.GetComponent<SkyBox>().addArrows();
-                        nextObject.GetComponent<SkyBox>().counter = 10;
-                        // XROrigin.transform.rotation = Quaternion.Inverse(nextObject.transform.rotation);
-                        RenderSettings.skybox = nextObject.GetComponent<SkyBox>().myMaterial;
-                        RenderSettings.skybox.SetFloat("_Rotation", -nextObject.transform.rotation.eulerAngles.y);
-                        destroyArrows();
+                        // XROrigin.GetComponent<Controller>().CurrentlyInside = arrow.GetComponent<ArrowScript>().TransformTo;
+                        // GameObject nextObject = arrow.GetComponent<ArrowScript>().TransformTo;
+                        // XROrigin.transform.position = arrow.GetComponent<ArrowScript>().TransformTo.transform.position;
+                        // nextObject.GetComponent<SkyBox>().addArrows();
+                        // nextObject.GetComponent<SkyBox>().counter = 10;
+                        // // XROrigin.transform.rotation = Quaternion.Inverse(nextObject.transform.rotation);
+                        // RenderSettings.skybox = nextObject.GetComponent<SkyBox>().myMaterial;
+                        // RenderSettings.skybox.SetFloat("_Rotation", -nextObject.transform.rotation.eulerAngles.y);
+                        // destroyArrows();
+                        teleport(arrow.GetComponent<ArrowScript>().TransformTo);
                         break;
                     }
                 }
@@ -74,7 +75,17 @@ public class SkyBox : MonoBehaviour
             arrows.Add(arrow);
         }
     }
-
+    public void teleport(GameObject transformTo){
+        XROrigin.GetComponent<Controller>().CurrentlyInside = transformTo;
+        GameObject nextObject = transformTo;
+        XROrigin.transform.position = nextObject.transform.position;
+        nextObject.GetComponent<SkyBox>().addArrows();
+        nextObject.GetComponent<SkyBox>().counter = 10;
+        // XROrigin.transform.rotation = Quaternion.Inverse(nextObject.transform.rotation);
+        RenderSettings.skybox = nextObject.GetComponent<SkyBox>().myMaterial;
+        RenderSettings.skybox.SetFloat("_Rotation", -nextObject.transform.rotation.eulerAngles.y);
+        destroyArrows();
+    }
     public void destroyArrows(){
         foreach(GameObject arrow in arrows){
             UnityEngine.Object.DestroyImmediate(arrow);
